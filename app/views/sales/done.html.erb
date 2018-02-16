@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+<table>
+    <tr>
+        <th>COD</th>
+        <th>Detalle</th>
+        <th>valor</th>
+        <th>Descuento</th>
+        <th>Valor</th>
+        <th>Impuestos</th>
+        <th>Total</th>
+    </tr>
+
+<% @sales.each do |e| %>
+    <tr>
+        <th><%= e.cod %></th>
+        <th><%= e.detail %></th>
+        <th><%= e.value %></th>
+        <th><%= e.discount %></th>
+        <th><%= e.tax %></th>
+        <th><%= e.total %></th>
+    </tr>
+<% end %>
+
+</table>
